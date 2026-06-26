@@ -1,0 +1,67 @@
+
+body{
+    margin:0px;
+    padding: 0px;
+    background-image: url(https://wallpapers.com/images/hd/black-yamaha-rx100-side-shot-ys0ux426gdrq78zv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 10px;
+}
+.form{
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 1px rgb(196, 191, 191);
+    width: 500px;
+}
+.login{
+    font-family: "Pliant", sans-serif;
+    font-size: 30px;
+}
+.email{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(88, 90, 91);
+}
+.password{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(88, 90, 91);
+}
+
+.row3{
+    padding-top: 25px;
+    width: 100%;
+}
+.button{
+    background: rgb(71, 71, 255);
+    color: white;
+    border-radius: 50px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-color: rgb(71, 71, 255);
+}
+.signup{
+    color: rgb(71, 71, 255);
+}
+.input{
+    border-radius: 5px;
+    width: 97%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: solid 2px rgb(224, 219, 219);
+    color: rgb(88, 90, 91);
+}
+.oldaccount{
+    font-size: 15px;
+    text-align: center;
+}
