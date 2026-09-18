@@ -1,67 +1,160 @@
-
-body{
-    margin:0px;
-    padding: 0px;
-    background-image: url(https://wallpapers.com/images/hd/black-yamaha-rx100-side-shot-ys0ux426gdrq78zv.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    border-radius: 10px;
-}
-.form{
-    padding: 10px 50px 10px 50px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px 1px rgb(196, 191, 191);
-    width: 500px;
-}
-.login{
-    font-family: "Pliant", sans-serif;
-    font-size: 30px;
-}
-.email{
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(88, 90, 91);
-}
-.password{
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(88, 90, 91);
+* {
+  box-sizing: border-box;
 }
 
-.row3{
-    padding-top: 25px;
-    width: 100%;
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://wallpapers.com/images/hd/black-yamaha-rx100-side-shot-ys0ux426gdrq78zv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Segoe UI", sans-serif;
 }
-.button{
-    background: rgb(71, 71, 255);
-    color: white;
-    border-radius: 50px;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    border-color: rgb(71, 71, 255);
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
-.signup{
-    color: rgb(71, 71, 255);
+
+.form {
+  width: min(500px, 100%);
+  padding: 30px 30px 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
 }
-.input{
-    border-radius: 5px;
-    width: 97%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    font-size: 20px;
-    border: solid 2px rgb(224, 219, 219);
-    color: rgb(88, 90, 91);
+
+.login {
+  margin: 0 0 24px;
+  font-family: "Pliant", sans-serif;
+  font-size: clamp(26px, 5vw, 36px);
+  text-align: center;
 }
-.oldaccount{
+
+.row1,
+.row2 {
+  margin-bottom: 20px;
+}
+
+.email,
+.password {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(88, 90, 91);
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px 44px 12px 12px;
+  font-size: 16px;
+  border: solid 2px rgb(224, 219, 219);
+  color: rgb(88, 90, 91);
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.input:focus {
+  border-color: rgb(71, 71, 255);
+  box-shadow: 0 0 0 3px rgba(71, 71, 255, 0.12);
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: rgb(71, 71, 255);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.row3 {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.button {
+  background: rgb(71, 71, 255);
+  color: white;
+  border-radius: 50px;
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 18px;
+  border: 1px solid rgb(71, 71, 255);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.signup {
+  color: rgb(71, 71, 255);
+}
+
+.signup:hover {
+  cursor: pointer;
+}
+
+.message {
+  min-height: 22px;
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #1e8e3e;
+}
+
+.message.error {
+  color: #d93025;
+}
+
+.oldaccount {
+  margin: 18px 0 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .form {
+    padding: 24px 18px 18px;
+    border-radius: 12px;
+  }
+
+  .email,
+  .password {
+    font-size: 16px;
+  }
+
+  .input {
     font-size: 15px;
-    text-align: center;
+  }
+
+  .button {
+    font-size: 17px;
+  }
 }

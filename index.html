@@ -1,35 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login page</title>
-    <link rel="icon" href="./bike logo.jpg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body >
-
+    <link rel="icon" href="./bike logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="form">
-            <h1 class="login">Log in to your account</h1>
-            <div class="row1">
-                <h3 class="email">Email</h3>
-                <input type="email" placeholder="Enter your email" class="input">
+      <form class="form" id="loginForm">
+        <h1 class="login">Log in to your account</h1>
 
-            </div>
-            <div class="row2">
-                <h3 class="password">Password</h3>
-                <input type="password" placeholder="Enter password" class="input">
-
-            </div>
-            <div class="row3">
-                <button class="button">Sign in</button>
-            </div>
-            <h5 class="oldaccount">Dont have an account? <span class="signup">Sign up now</span></h5>
+        <div class="row1">
+          <label class="email" for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            class="input"
+          />
         </div>
+
+        <div class="row2 password-wrap">
+          <label class="password" for="password">Password</label>
+          <div class="password-field">
+            <input
+              id="password"
+              type="password"
+              placeholder="Enter password"
+              class="input"
+            />
+            <button
+              type="button"
+              class="toggle-password"
+              aria-label="Show password"
+            >
+              Show
+            </button>
+          </div>
+        </div>
+
+        <div class="row3">
+          <button type="submit" class="button">Sign in</button>
+        </div>
+
+        <p class="message" aria-live="polite"></p>
+
+        <h5 class="oldaccount">
+          Dont have an account? <span class="signup"><a href="sin.html">Sign up now</a></span>
+        </h5>
+      </form>
     </div>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
